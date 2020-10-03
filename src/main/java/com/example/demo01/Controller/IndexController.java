@@ -13,7 +13,7 @@ import java.util.List;
 public class IndexController {
     @Autowired
     private BookService bookservice;
-    @RequestMapping({"/", "/index"})
+    @RequestMapping({"/", "/index", "/hello"})
     public String index(Model model) {
         List<BookDTO> bookdtolist;
         bookdtolist = bookservice.getBooks();
